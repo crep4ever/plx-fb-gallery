@@ -6,15 +6,15 @@ set_include_path(get_include_path() . PATH_SEPARATOR . 'PluXml');
 // Fetch Facebook albums and convert them into PluXml articles
 //----------------------------------------------------------------------------
 
-require("class.fb.galery.php");
+require("class.fb.gallery.php");
 
-$fb_access_token = "";
-$fb_page_id = "160141077367724";
+$fb_page_id      = ""; // your facebook page id
+$fb_access_token = ""; // your facebook access token
 $fb_graph_api = "v2.7";
-$ignore_list = ['Timeline Photos', 'Mobile Uploads', 'Cover Photos', 'Profile Pictures', 'Logo du club'];
-$galery = new FacebookGallery($fb_page_id, $fb_access_token, $fb_graph_api);
-$galery->setIgnoreList($ignore_list);
-$articles = $galery->toArticles();
+$ignore_list = ['Timeline Photos', 'Mobile Uploads', 'Cover Photos', 'Profile Pictures'];
+$gallery = new FacebookGallery($fb_page_id, $fb_access_token, $fb_graph_api);
+$gallery->setIgnoreList($ignore_list);
+$articles = $gallery->toArticles();
 
 //----------------------------------------------------------------------------
 // Init PluXml session to register facebook articles
