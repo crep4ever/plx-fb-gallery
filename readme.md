@@ -1,7 +1,7 @@
 ## Description
 
 This repo is a proof of concept to convert a Facebook album gallery
-into [PluXml](www.pluxml.org) articles.
+into [PluXml](http://www.pluxml.org) articles.
 
  - fetch data from a public Facebook page through the graph api
  - process data into PluXml article structure
@@ -58,5 +58,5 @@ $article->endGallery();
 
 ### PluXml configuration
 
-  - `PluXml` directory is a default setup of [PluXml 5.5](www.pluxml.org) with the [artGalerie plugin](http://thepoulpe.net/index.php?article3/demo-plugin-artgalerie).
+  - `PluXml` directory is a default setup of [PluXml 5.5](http://www.pluxml.org) with the [artGalerie plugin](http://thepoulpe.net/index.php?article3/demo-plugin-artgalerie).
   - the artGalerie plugin is configured with [minimal css rules](http://github.com/crep4ever/plx-fb-gallery/blob/master/PluXml/data/configuration/plugins/artGalerie.site.css).
