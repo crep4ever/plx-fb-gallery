@@ -30,7 +30,7 @@ $gallery = new FacebookGallery($page_id, $access_token, $graph_api);
 
 - `class.fb.article.php`: wrapper for PluXml's article format.
 
-This class is used by `FacebookGalery::toArticles()` method.
+This class is used by `FacebookGallery::toArticles()` method.
 Building an article from facebook json data would look something like this:
 
 ```php
