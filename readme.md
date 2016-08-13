@@ -26,7 +26,8 @@ $access_token = "00000000000000"; // your facebook access token
 $page_id      = "00000000000000"; // your facebook page id
 $graph_api    = "v2.7";
 $gallery = new FacebookGallery($page_id, $access_token, $graph_api);
-?>```
+?>
+```
 
 - `class.fb.article.php`: wrapper for PluXml's article format.
 
@@ -51,10 +52,9 @@ foreach ($photos as $photo)
   $article->addImage($photo['name'], $photo['source'], '');
 }
 $article->endGallery();
-?>```
-
+?>
+```
 - `index.php`: write Facebook albums as PluXml articles.
-
 
 ### PluXml configuration
 
