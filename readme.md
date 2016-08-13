@@ -59,4 +59,4 @@ $article->endGallery();
 ### PluXml configuration
 
   - `PluXml` directory is a default setup of [PluXml 5.5](www.pluxml.org) with the [artGalerie plugin](http://thepoulpe.net/index.php?article3/demo-plugin-artgalerie).
-  - the artGalerie plugin is configured with [minimal css rules](http://github.com/crep4ever/plx-fb-gallery/PluXml/data/configuration/plugins/artGalerie.site.css).
+  - the artGalerie plugin is configured with [minimal css rules](http://github.com/crep4ever/plx-fb-gallery/blob/master/PluXml/data/configuration/plugins/artGalerie.site.css).
