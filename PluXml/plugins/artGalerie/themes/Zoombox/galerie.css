@@ -1,0 +1,9 @@
+.zoombox-thumbnails {
+	width: 550px;
+	padding: 5px;
+}
+.zoombox-thumbnails a {
+	display: inline;
+    float: left;
+    margin: 10px;
+}

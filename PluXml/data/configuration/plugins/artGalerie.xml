@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<parameter name="root_dir" type="cdata"><![CDATA[photos]]></parameter>
+	<parameter name="show_thumb" type="numeric">1</parameter>
+	<parameter name="enableManualMethod" type="numeric">0</parameter>
+	<parameter name="theme" type="cdata"><![CDATA[default]]></parameter>
+	<parameter name="sortorder" type="cdata"><![CDATA[natural]]></parameter>
+</document>

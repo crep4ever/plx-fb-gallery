@@ -1,0 +1,25 @@
+table {
+    margin: 0 auto 18px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.thumbs td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th, table td {
+    padding: 4px 10px 4px 4px;
+    vertical-align: top;
+}
+
+table.thumbs td img {
+    margin: 0 auto;
+}
+
+img.border {
+    background-color: #EFEFEF;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
