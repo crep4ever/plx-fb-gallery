@@ -57,7 +57,7 @@ class FacebookGallery
 
   private function fetch()
   {
-    $fields = "name,albums{id,name,description,link,created_time,cover_photo{source},photo_count,photos{name,source,images}}";
+    $fields = "name,albums{id,name,description,link,created_time,cover_photo{source},photo_count,photos{picture,source}}";
     $content = $this->getUrl("https://graph.facebook.com/{$this->m_graph_version}/{$this->m_page_id}?fields={$fields}&access_token={$this->m_access_token}");
     $obj = json_decode($content, true, 512, JSON_BIGINT_AS_STRING);
     return $obj;
@@ -119,7 +119,7 @@ class FacebookGallery
       $article->setDescription(get($album, 'description'));
 
       $cover = get($album, 'cover_photo');
-      $article->setCoverPhoto(get($cover, 'source'), get($cover, 'name'));
+      $article->setCoverPhoto(get($cover, 'source'), get($album, 'name'));
       $article->setPhotoCount(get($album, 'photo_count'));
 
       // Article content
@@ -128,8 +128,9 @@ class FacebookGallery
       foreach ($photos as $photo)
       {
         $title     = get($photo, 'name');
-        $thumbnail = get($photo, 'source');
-        $article->addImage($title, $thumbnail, $thumbnail);
+        $thumbnail = get($photo, 'picture');
+        $target    = get($photo, 'source');
+        $article->addImage($title, $thumbnail, $target);
       }
       $article->endGallery();
 
